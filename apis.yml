@@ -1,7 +1,28 @@
 aid: innertrends
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/innertrends.png
 name: Innertrends
-description: Innertrends is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  InnerTrends is a UK-based analytics and data consultancy that operates as a
+  fractional data department for SaaS marketing and growth teams. Founded in
+  2015 and based in Norwich, England, it builds a marketing and growth data
+  warehouse that consolidates customer and attribution data, delivers custom
+  reports and customer-journey deep-dive analyses, and provides tracking and
+  measurement consulting for product-led and subscription businesses. The
+  company is ISO 27001 certified and GDPR compliant. It was surfaced as a
+  portfolio company of 500 Global and added to the API Evangelist network for
+  enrichment. As of this pass it does not publish a public developer API,
+  documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/innertrends/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Analytics
+- Product Analytics
+- Marketing
+- Growth
+- Data
+- SaaS
+- Consulting
+- Attribution
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +51,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://innertrends.com
+  url: https://www.innertrends.com
+- type: Blog
+  url: https://www.innertrends.com/blog
+- type: Pricing
+  url: https://www.innertrends.com/pricing
+- type: Support
+  url: https://www.innertrends.com/contact
+- type: TermsOfService
+  url: https://www.innertrends.com/terms
+- type: PrivacyPolicy
+  url: https://www.innertrends.com/privacy
+- type: Compliance
+  url: https://www.innertrends.com/security
+- type: Security
+  url: https://www.innertrends.com/security
+- type: TrustCenter
+  url: security/innertrends-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/innertrends-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/innertrends-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

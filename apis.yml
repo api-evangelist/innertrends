@@ -32,7 +32,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-13'
 tags:
 - Company
 - Analytics
@@ -72,8 +72,40 @@ common:
   url: security/innertrends-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/innertrends-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/InnerTrends
+- type: Plans
+  url: plans/innertrends-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/innertrends-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 3
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Full contract-discovery pass (STEP 0b) run against every candidate host —
+    no machine-readable contract exists. Added a published-pricing artifact, a
+    generated llms.txt, and a well-known absence probe.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    InnerTrends now sells data-warehouse and analysis services rather than
+    software — its old product-analytics SaaS and its developer surface are gone
+    (support.innertrends.com, api., app., docs. and developers.innertrends.com no
+    longer resolve in DNS), the marketing site is WordPress with the REST API
+    disabled, and the only public code is a deployment script that stands a data
+    pipeline up inside the CUSTOMER'S own Google Cloud project.
+  evidence:
+  - url: https://www.innertrends.com/openapi.json
+    status: 404
+  - url: https://www.innertrends.com/wp-json/
+    status: 404
+  - url: https://www.innertrends.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.innertrends.com/api
+    status: 404
+  - url: https://www.innertrends.com/pricing
+    status: 200
+  checked: '2026-08-13'

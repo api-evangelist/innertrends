@@ -1,0 +1,41 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTP probes of https://www.innertrends.com/.well-known/*
+host: www.innertrends.com
+hit_count: 0
+paths:
+- path: /.well-known/security.txt
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/agent-card.json
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+- path: /.well-known/agent.json
+  status: 404
+  content_type: text/html; charset=UTF-8
+  file: null
+notes: >-
+  Every /.well-known/ path probed on www.innertrends.com returns 404 from the
+  WordPress front controller. No document is served at any well-known location,
+  so NO WellKnown or SecurityTxt pointer is wired into apis.yml — this file
+  records a verified absence, not a presence. No other InnerTrends host was
+  reachable to probe: api., app., docs., developers., support., status.,
+  dashboard. and my.innertrends.com do not resolve in DNS.

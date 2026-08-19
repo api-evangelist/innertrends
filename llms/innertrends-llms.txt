@@ -1,0 +1,45 @@
+# InnerTrends
+
+> InnerTrends is a UK-based analytics and data consultancy (founded 2015, Norwich, England) that operates as a fractional data department for SaaS marketing and growth teams. It builds and maintains a Marketing & Growth Data Warehouse that consolidates customer, product, CRM, billing and ad-platform data, fixes cross-platform attribution, activates conversion data back into Google Ads and Meta, and delivers custom customer-journey Data Deep Dive analyses. It is ISO 27001 certified and GDPR compliant. InnerTrends does NOT publish a public developer API: there is no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK on any package registry, and no MCP or A2A agent surface. The product-analytics SaaS it ran previously — with a tracking API and a support.innertrends.com knowledge base — has been retired; those hosts no longer resolve. Engagements are delivered as services, and the data lands in the client's own warehouse (BigQuery), which the client accesses directly.
+
+## Solutions
+
+- [Marketing & Growth Data Warehouse](https://www.innertrends.com/marketing-growth-data-warehouse): Design, build and daily operation of a marketing and growth data warehouse — integrations, customer-journey and attribution data models, transformations, and conversion data activation to ad platforms.
+- [Customer Journey Data Deep Dives](https://www.innertrends.com/customer-journey-data-deep-dives): Expert analysis of the SaaS customer journey by a dedicated team of data and business analysts.
+- [Data Deep Dive Examples](https://www.innertrends.com/data-deep-dive-examples): Worked examples of the analyses delivered.
+
+## Analyses
+
+- [Identify the Habit Moment](https://www.innertrends.com/data-analyses/identify-the-habit-moment-the-key-to-long-term-retention): The key to long-term retention.
+- [Optimize app onboarding](https://www.innertrends.com/data-analyses/how-to-optimize-the-onboarding-of-your-app): Onboarding funnel analysis.
+- [Identify Power Account profiles](https://www.innertrends.com/data-analyses/identify-the-profile-of-the-power-accounts): Profiling the highest-value accounts.
+- [Reduce churn](https://www.innertrends.com/data-analyses/how-to-reduce-churn): Churn driver analysis.
+
+## Pricing
+
+- [Pricing](https://www.innertrends.com/pricing): Published, itemized service pricing — warehouse setup $2,000–$15,000 one-time, data processing & maintenance $500/month, dedicated support $700/day (min. 3 days/month) or ticket-based, Data Deep Dive projects starting at $10,000. No API plan, no free tier, no self-serve sign-up.
+
+## Source
+
+- [GitHub — InnerTrends](https://github.com/InnerTrends): One public repository.
+- [Data-Pipeline-for-Product-Analytics](https://github.com/InnerTrends/Data-Pipeline-for-Product-Analytics): Shell/Python/Node deployment automation that stands up a product-analytics data pipeline in a customer's OWN Google Cloud project (BigQuery dataset, Cloud Storage bucket, App Engine data collector, Cloud Functions loader, Cloud Scheduler jobs). The App Engine `analytics_data_collector` service is deployed by and for the customer — it is not a hosted InnerTrends API endpoint, and no base URL, contract or credentials are published for it.
+
+## Security & Compliance
+
+- [Security](https://www.innertrends.com/security): ISO 27001 certification, GDPR compliance, 256-bit TLS, third-party penetration testing, dual-layer encryption of PII on Google Cloud, and an informal responsible-disclosure contact. No SOC 2, HIPAA, PCI DSS or FedRAMP claims; no /.well-known/security.txt (probed 404).
+
+## Company
+
+- [Website](https://www.innertrends.com)
+- [About](https://www.innertrends.com/about-us)
+- [Blog](https://www.innertrends.com/blog)
+- [Customer stories](https://www.innertrends.com/customer-stories)
+- [Contact](https://www.innertrends.com/contact)
+- [Terms of Service](https://www.innertrends.com/terms)
+- [Privacy Policy](https://www.innertrends.com/privacy)
+- [LinkedIn](https://www.linkedin.com/company/innertrends)
+
+## Notes for agents
+
+- There is nothing here to call. No baseURL, no auth scheme, no rate limits, no webhooks, no events, no MCP server, no agent card. Do not attempt to construct requests against api.innertrends.com or app.innertrends.com — neither host exists in DNS.
+- Engagement is human: the entry point is the contact form or the "request offer" form on the site.

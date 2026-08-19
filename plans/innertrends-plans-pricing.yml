@@ -1,0 +1,93 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.innertrends.com/pricing
+docs: https://www.innertrends.com/pricing
+currency: USD
+plan_count: 5
+api_plans: false
+notes: >-
+  InnerTrends publishes real, itemized prices — unusual for a data consultancy —
+  but they price SERVICE ENGAGEMENTS, not API access. There is no developer plan,
+  no metered API tier, no free tier and no self-serve sign-up; every engagement
+  starts with a scoping conversation. Captured here because the prices are
+  published verbatim on the public pricing page, and recorded as api_plans: false
+  so nothing downstream reads these as API pricing.
+plans:
+- name: Marketing & Growth Data Warehouse — Setup
+  solution: Marketing & Growth Data Warehouse
+  price_min: 2000
+  price_max: 15000
+  currency: USD
+  billing_period: one-time
+  price_label: '$2,000 – $15,000'
+  price_basis: >-
+    Depending on complexity, the number of data sources, missing pipelines, and
+    improvements needed in the current data stack.
+  included:
+  - Data stack audit and implementation plan
+  - Data warehouse setup
+  - Integration of marketing platforms
+  - Integration of CRM / billing / product database
+  - Customer journey data model
+  - Attribution data model
+  - Data transformations for reporting & analytics
+  - Data activation setup for ad platforms (Google / Meta / etc.)
+  - Initial data validation and integrity checks
+- name: Marketing & Growth Data Warehouse — Data processing & maintenance
+  solution: Marketing & Growth Data Warehouse
+  price: 500
+  currency: USD
+  billing_period: month
+  price_label: $500/month
+  included:
+  - Daily data processing
+  - Data pipeline monitoring
+  - Data integrity checks
+  - Fixing data issues when they appear
+  - Syncing data to reporting tools (BI / dashboards)
+  - Syncing data to product analytics tools
+  - Syncing data to marketing automation / ad platforms
+  - Conversion data activation (Google Ads, Meta Ads, etc.)
+  - Small adjustments to data models when needed
+  limits:
+  - >-
+    Larger model changes fall outside the monthly fee and are priced and solved
+    ticket-based.
+- name: Dedicated Support — Ticket based
+  solution: Marketing & Growth Data Warehouse
+  price: null
+  currency: USD
+  billing_period: per-ticket
+  price_label: $/ticket
+  price_basis: >-
+    For non-recurring needs; price is established once InnerTrends has the
+    details of the request.
+  included:
+  - Dedicated Slack channel for fast, direct communication
+  - Ongoing improvements to the data warehouse and data models
+- name: Dedicated Support / Data Deep Dive — Days allocation (subscription)
+  solution: Both
+  price: 700
+  currency: USD
+  billing_period: day
+  price_label: $700/day
+  included:
+  - Dedicated team of technical data people and business analysts
+  - Set number of days each month
+  limits:
+  - Minimum commitment of 3 days/month.
+- name: Data Deep Dive Analyses — Project-based
+  solution: Data Deep Dive Analyses
+  price_min: 10000
+  currency: USD
+  billing_period: one-time
+  price_label: starting at $10,000
+  price_basis: >-
+    For non-recurring needs; the price depends on project size and complexity.
+    Projects are validated before any commitment.
+  included:
+  - Expert data analysis of the SaaS customer journey
+  - Immediate data-driven insight into a stated business challenge
+free_tier: false
+trial: false
+self_serve_signup: false

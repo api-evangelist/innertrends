@@ -11,15 +11,17 @@ deliveryModel:
   generated: '2026-08-28'
   method: derived
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: paid
+  onboarding: approval
   trial: false
   try_now: false
   public: false
-  label: Unknown
+  label: Paid · Requires approval
   confidence: low
-  source: []
-  generated: '2026-07-22'
+  source:
+  - plans
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/innertrends.png
 name: Innertrends

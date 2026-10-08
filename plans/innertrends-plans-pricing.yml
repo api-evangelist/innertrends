@@ -91,3 +91,40 @@ plans:
 free_tier: false
 trial: false
 self_serve_signup: false
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Marketing & Growth Data Warehouse — Setup
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Marketing & Growth Data Warehouse — Data processing & maintenance
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Dedicated Support — Ticket based
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Dedicated Support / Data Deep Dive — Days allocation (subscription)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Data Deep Dive Analyses — Project-based
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
